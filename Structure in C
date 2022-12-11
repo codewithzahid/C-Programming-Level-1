@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+// user define data structer
+struct student
+{
+    int roll;
+    float result;
+    char name[100];
+};
+
+int main()
+{ 
+// create a structure variable to assign the variables value
+struct student s1;
+s1.roll = 1001;
+s1.result = 3.86;
+strcpy(s1.name, "Zahid");
+
+// output of structure
+printf("Name: %s \n", s1.name);
+printf("Roll: %d \n", s1.roll);
+printf("Result: %f \n", s1.result);
+
+return 0;
+}
